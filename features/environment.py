@@ -15,13 +15,13 @@ def get_driver(context):
 
 def before_scenario(context, scenario):
     get_driver(context)
-    screen_width = context.browser.execute_script(
-        "res=screen.width; return res")
-    screen_height = context.browser.execute_script(
-        "res=screen.height; return res")
-    context.browser.set_window_size(screen_width, screen_height)
-    context.browser.implicitly_wait(5)  # seconds
-    context.browser.maximize_window()
+    # screen_width = context.browser.execute_script(
+    #     "res=screen.width; return res")
+    # screen_height = context.browser.execute_script(
+    #     "res=screen.height; return res")
+    # context.browser.set_window_size(screen_width, screen_height)
+    # context.browser.implicitly_wait(5)  # seconds
+    # context.browser.maximize_window()
 
 
 def after_scenario(context, scenario):
