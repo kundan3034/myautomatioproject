@@ -10,9 +10,11 @@ def get_driver(context):
 
     # context.browser = CustomWebDriver()
     if os.path.exists('/usr/local/bin/chromedriver'):
-        context.browser = webdriver.Chrome('/usr/local/bin/chromedriver')
         print("Chromedriver Path successfully taken")
+        context.browser = webdriver.Chrome('/usr/local/bin/chromedriver')
+
     else:
+        print("Else Path successfully taken")
         context.browser = webdriver.Chrome('/usr/bin/chromedriver')
     # context.browser = webdriver.Firefox()
 
