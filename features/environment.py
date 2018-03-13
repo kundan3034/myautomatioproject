@@ -1,4 +1,5 @@
 from selenium import webdriver
+import os
 from features.custom_web_driver import CustomWebDriver
 
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
@@ -8,7 +9,10 @@ def get_driver(context):
     # profile = FirefoxProfile("ff-profile")
 
     # context.browser = CustomWebDriver()
-    context.browser = webdriver.Chrome('/usr/local/bin/chromedriver')
+    if os.path.exists('/usr/local/bin/chromedriver'):
+        context.browser = webdriver.Chrome('/usr/local/bin/chromedriver')
+    else:
+        context.browser = webdriver.Chrome('/usr/bin/chromedriver')
     # context.browser = webdriver.Firefox()
 
 
