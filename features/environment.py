@@ -12,8 +12,8 @@ def get_driver(context):
     # profile = webdriver.FirefoxProfile()
     # profile.native_events_enabled = True
     # context.browser = webdriver.Firefox(profile)
-    # context.browser = webdriver.Firefox()
-    context.browser = webdriver.Chrome()
+    context.browser = webdriver.Firefox()
+    # context.browser = webdriver.Chrome()
 
 
 
