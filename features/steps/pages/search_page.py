@@ -7,7 +7,6 @@ class SearchPage(object):
         self.driver = context.browser
 
     def search_for_keyword(self, keyword):
-        # self.driver.maximize_window()
         search_box = self.driver.find_element_by_css_selector(".gsfi")
         search_box.send_keys(keyword)
         search_box.send_keys(Keys.ENTER)

@@ -3,7 +3,7 @@ fake-factory==0.5.3
 parse==1.6.6
 parse-type==0.3.4
 pbr==1.8.1
-selenium==3.9.0
+selenium==2.53.4
 six==1.10.0
 stevedore==1.10.0
 virtualenv==13.1.2
